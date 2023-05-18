@@ -46,8 +46,8 @@ def getFitness(individual, X, y):
         clf = LogisticRegression()
 
         return (avg(cross_val_score(clf, X_subset, y, cv=5)),)
-    else:
-        return(0,)
+    
+return(0,)
 
 
 def geneticAlgorithm(X, y, n_population, n_generation):
